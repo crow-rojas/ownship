@@ -1,0 +1,5 @@
+# The Orca worktree manager runs the setup script when it creates a worktree.
+# pnpm install also installs the git hooks. Nothing to archive: node_modules, dist and tmp live in the worktree.
+scripts:
+  setup: pnpm install
+setupAgentStartupPolicy: wait-for-setup
